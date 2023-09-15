@@ -1,0 +1,16 @@
+import pandas as pd
+
+# Load your dataset into a Pandas DataFrame
+data = pd.read_csv('your_dataset.csv')
+
+# Use value_counts() to count unique values in a categorical column
+value_counts = data['categorical_column'].value_counts()
+
+# Print the value counts
+print(value_counts)
+
+
+
+# Calculate the correlation matrix (Pearson correlation)
+correlation_matrix = data.corr()
+print(correlation_matrix)
